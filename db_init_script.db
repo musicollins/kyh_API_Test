@@ -1,0 +1,12 @@
+CREATE TABLE api_demo.product (
+	id INT auto_increment NOT NULL,
+	title varchar(100) NOT NULL,
+	genre varchar(100) NOT NULL,
+	synopsis LONGTEXT NOT NULL,
+	imgurl varchar(100) NOT NULL,
+	created_at DATETIME DEFAULT CURRENT_TIMESTAMP NULL,
+	CONSTRAINT product_pk PRIMARY KEY (id)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=latin1
+COLLATE=latin1_swedish_ci;
